@@ -1,0 +1,539 @@
+{% load staticfiles %}
+{%load crispy_forms_tags%}
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" >
+<head>
+
+    <script type="text/javascript">
+//<![CDATA[
+try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:1442427997,byc:0,owlid:"cf",bag2:1,mirage2:0,oracle:0,paths:{cloudflare:"/cdn-cgi/nexp/dok3v=1613a3a185/"},atok:"8e222404621f70c52d2796f0388d7641",petok:"b8693acd6b3b0ca668f006c5be3e0c4d6e9f8a13-1442860841-86400",betok:"f67af45b2d6353722d71baa38df5a1c33c7865f5-1442860841-120",zone:"template-help.com",rocket:"0",apps:{"abetterbrowser":{"ie":"7"},"ga_key":{"ua":"UA-7078796-5","ga_bs":"2"}}}];!function(a,b){a=document.createElement("script"),b=document.getElementsByTagName("script")[0],a.async=!0,a.src="../../../ajax.cloudflare.com/cdn-cgi/nexp/dok3v%3de9627cd26a/cloudflare.min.js",b.parentNode.insertBefore(a,b)}()}}catch(e){};
+//]]>
+</script>
+<link href="{% static 'css/googleapi.css' %}" rel='stylesheet' type='text/css'>
+
+      <base  />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+  <meta name="generator" content="Joomla! - Open Source Content Management" />
+  <title>Blog</title>
+  <link href="blogc0d0.html?format=feed&amp;type=rss" rel="alternate" type="application/rss+xml" title="RSS 2.0" />
+  <link href="blog7b17.html?format=feed&amp;type=atom" rel="alternate" type="application/atom+xml" title="Atom 1.0" />
+  <link href="http://static.livedemo00.template-help.com/joomla_55099/templates/theme3144/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+  <link rel="stylesheet" href="{%static 'css/common.css' %}" type="text/css" />
+  <link rel="stylesheet" href="{%static 'css/default.css' %}" type="text/css" />
+  <link rel="stylesheet" href="{%static 'css/default1.css' %}" type="text/css" />
+  <link rel="stylesheet" href="{%static 'css/style.css' %}" type="text/css" />
+  <link rel="stylesheet" href="{%static 'css/layout.css' %}" type="text/css" />
+  <link rel="stylesheet" href="{%static 'css/jquery.fancybox.css' %}" type="text/css" />
+  <link rel="stylesheet" href="{%static 'css/jquery.fancybox-buttons.css' %}" type="text/css" />
+  <link rel="stylesheet" href="{%static 'css/jquery.fancybox-thumbs.css' %}" type="text/css" />
+  <link rel="stylesheet" href="{%static 'css/template.css' %}" type="text/css" />
+  <link rel="stylesheet" href="{%static 'css/lrstyle.css' %}" type="text/css" />
+  <link rel="stylesheet" href="{%static 'css/default_icemegamenu.css' %}" type="text/css" />
+  <link rel="stylesheet" href="{%static 'css/default_icemegamenu-reponsive.css' %}" type="text/css" />
+  <link rel="stylesheet" href="{%static 'css/navbar.css' %}" type="text/css" />
+  <script src="{%static 'js/file1.js' %}" type="text/javascript"></script>
+  <script src="{%static 'js/file2.js' %}" type="text/javascript"></script>
+  <script src="{%static 'js/jquery.min.js' %}" type="text/javascript"></script>
+  <script src="{%static 'js/jquery-noconflict.js' %}" type="text/javascript"></script>
+  <script src="{%static 'js/jquery-migrate.min.js' %}" type="text/javascript"></script>
+  <script src="{%static 'js/caption.js' %}" type="text/javascript"></script>
+  <script src="{%static 'js/bootstrap.min.js' %}" type="text/javascript"></script>
+  <script src="{%static 'js/menu.js' %}" type="text/javascript"></script>
+  <script src="{%static 'js/jquery.rd-navbar.js' %}" type="text/javascript"></script>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+	  integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+		integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript">
+jQuery(window).on('load',  function() {
+				new JCaption('img.caption');
+			});
+jQuery(document).ready(function(){
+	jQuery('.hasTooltip').tooltip({"html": true,"container": "body"});
+});
+window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpRequest():new ActiveXObject("Microsoft.XMLHTTP")}catch(e){}if(r){r.open("GET.html","index.html",true);r.send(null)}},840000);
+jQuery(document).ready(function($){
+	 RDMobilemenu_autoinit("#icemegamenu");
+})
+  </script>
+  <script defer async src="{%static 'js/komento-1.8.3.static.min.js' %}"></script>
+  <script>Komento.token = "2b87137163c64539488a05dbce315f32";</script>
+  <script defer async src="{%static 'js/file3.js' %}"></script>
+
+  <script type="text/javascript">
+/* <![CDATA[ */
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-7078796-5']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+(function(b){(function(a){"__CF"in b&&"DJS"in b.__CF?b.__CF.DJS.push(a):"addEventListener"in b?b.addEventListener("load",a,!1):b.attachEvent("onload",a)})(function(){"FB"in b&&"Event"in FB&&"subscribe"in FB.Event&&(FB.Event.subscribe("edge.create",function(a){_gaq.push(["_trackSocial","facebook","like",a])}),FB.Event.subscribe("edge.remove",function(a){_gaq.push(["_trackSocial","facebook","unlike",a])}),FB.Event.subscribe("message.send",function(a){_gaq.push(["_trackSocial","facebook","send",a])}));"twttr"in b&&"events"in twttr&&"bind"in twttr.events&&twttr.events.bind("tweet",function(a){if(a){var b;if(a.target&&a.target.nodeName=="IFRAME")a:{if(a=a.target.src){a=a.split("#")[0].match(/[^?=&]+=([^&]*)?/g);b=0;for(var c;c=a[b];++b)if(c.indexOf("url")===0){b=unescape(c.split("=")[1]);break a}}b=void 0}_gaq.push(["_trackSocial","twitter","tweet",b])}})})})(window);
+/* ]]> */
+</script>
+<script type="text/javascript">
+    $(document).ready(function()
+    {
+        $(".content-markdown").each(function()
+        {
+            var content=$(this).text()
+            console.log(content)
+            var markedContent=marked(content)
+            console.log(markedContent)
+            $(this).html(markedContent)
+        })
+        $(".content-markdown img").each(function()
+        {
+            $(this).addClass("img-responsive");
+        })
+
+        var contentInput=$("#id_content");
+
+        function setContent(value)
+        {
+            var markedContent=marked(value)
+            $("#preview-content").html(markedContent)
+            $("#preview-content img").each(function()
+            {
+                $(this).addClass("img-responsive");
+            })
+        }
+        setContent(contentInput.val())
+        contentInput.keyup(function()
+        {
+            var newContent=$(this).val()
+            setContent(newContent)
+        })
+
+        var titleInput=$("#id_title");
+        function setTitle(value)
+        {
+            $("#preview-title").text(value)
+        }
+        setTitle(titleInput.val())
+        titleInput.keyup(function()
+        {
+            var newContent=$(this).val()
+            setTitle(newContent)
+        })
+
+        $(".comment-reply-btn").click(function(event)
+        {
+            event.preventDefault();
+            $(this).parent().next(".comment-reply").fadeToggle();
+        })
+    })
+
+</script>
+</head>
+  <body class="body__ option-com_content view-category task- itemid-141">
+  {%include "messages_display.html"%}
+<div class="container">
+    <ol class="breadcrumb">
+        <li><a href="{% url 'posts:list' %}">Home</a></li>
+        {% block post_detail_link %}
+        {% endblock %}
+        {% if not request.user.is_authenticated %}
+            <li class="pull-right"><a href="{% url 'register' %}">Register</a></li>
+            <li class="pull-right"><a href="{% url 'login' %}">Login</a></li>
+        {% else %}
+            <li class="pull-right"><a href="{% url 'logout' %}">Logout</a></li>
+        {% endif %}
+    </ol>
+    {%block content%}
+    {%endblock content%}
+</div>
+        <!-- Body -->
+<div id="wrapper">
+	<!-- Main Content row -->
+		<div id="content">
+          <div class="row-container">
+            <div class="container-fluid">
+              <div class="content-inner row-fluid">
+
+                <div id="component" class="span12">
+                  <main role="main">
+					  <div id="system-message-container"></div>
+					  <section class="page-blog page-blog__" itemscope itemtype="http://schema.org/Blog">
+                          <div class="items-row cols-1 row-0 row-fluid">
+			                    <div class="span12">
+			                        <article class="item column-1" id="item-11">
+				<!--  title/author -->
+              <div class="col-sm-12">
+				<form method="GET" action="" class="row">
+         			<div class="col-sm-6">
+             			<div class="input-group">
+                			<input class="form-control" type="text" name="q" value="{{request.GET.q}}" placeholder="Search Post"/>
+                				<span class="input-group-btn">
+                    <!--<input class="btn btn-default" type="submit" value="Search"/>-->
+                    	<button class="btn btn-primary" type="submit">Search<i class="fa fa-search" aria-hidden="true"></i></button>
+                </span>
+             </div>
+         </div>
+     </form>
+{%for obj in object_list%}
+		{%if obj.draft%}<h3> Draft</h3>{%endif%}
+		{%if obj.publish > today%}<h3>Future Post</h3>{%endif%}
+	<h3><a href="{{obj.get_absolute_url}}">{{obj.title}}</a></h3>
+		<!-- info TOP -->
+	<div class="item_info">
+		<dl class="item_info_dl">
+				<dd>
+					<address class="item_createdby">
+						by {{obj.user.get_username}}
+					</address>
+				</dd>
+				<dd>
+					<time datetime="2014-05-02 19:47" class="item_published">
+				on {{obj.publish}}</time>
+				</dd>
+		</dl>
+	</div>
+<!-- Intro image -->
+	{%if obj.image%}
+		<figure class="item_img img-intro img-intro__none">
+				<img src="{{obj.image.url}}" class="img-responsive" alt=""/>
+		</figure>
+	{%endif%}
+<!--<img src="{{obj.image.url}}" />
+<!-- Introtext
+<div class="item_introtext"> -->
+<p class="content-markdown">{{obj.content|truncatechars_html:270}}</p>
+                        <!--{{obj.get_markdown|truncatechars_html:120}}-->
+						<p><a class="btn btn-info" href="{{obj.get_absolute_url}}"><span>Read more</span></a></p>
+	</div>
+	<hr/>
+</div>
+{%endfor%}
+</div>
+<!-- info BOTTOM -->
+	<!-- Tags -->
+		<!-- More -->
+
+<div class="kmt-readon">
+
+				<span class="kmt-comment aligned-left">
+			<a href="blog/15-blog-vivamus-luctus-lectus-sit/11-donec-eu-elit-in-nisi-placerat.html#section-kmt">3 </a>
+		</span>
+
+			</div>			</article><!-- end item -->
+					</div><!-- end spann -->
+
+	</div><!-- end row -->
+		<div class="items-row cols-1 row-1 row-fluid">
+			<div class="span12">
+			<article class="item column-1" id="item-10">
+				<!--  title/author -->
+<header class="item_header">
+	<h5 class="item_title">
+        <a href="blog/13-blog-in-neque-arcu-vulputate/10-in-neque-arcu-vulputate-vitae.html">
+            <span class="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first">In</span>
+            <span class="item_title_part_1 item_title_part_even item_title_part_first_half">neque</span>
+            <span class="item_title_part_2 item_title_part_odd item_title_part_first_half">arcu,</span>
+            <span class="item_title_part_3 item_title_part_even item_title_part_second_half">vulputate</span>
+            <span class="item_title_part_4 item_title_part_odd item_title_part_second_half item_title_part_last">vitae</span>
+        </a>
+    </h5>
+</header>
+<!-- info TOP -->
+<div class="item_info">
+	<dl class="item_info_dl">
+		<dt class="article-info-term"></dt>
+				<dd>
+			<address class="item_createdby">
+				by Super User			</address>
+		</dd>
+				<dd>
+			<time datetime="2014-05-01 19:45" class="item_published">
+				on 01/05/2014			</time>
+		</dd>
+				<dd>
+			<div class="komento">
+
+
+	<div class="kmt-readon">
+
+				<span class="kmt-comment aligned-left">
+			<a href="blog/13-blog-in-neque-arcu-vulputate/10-in-neque-arcu-vulputate-vitae.html#section-kmt">0 </a>
+		</span>
+
+			</div>
+
+
+
+			</div>
+		</dd>
+			</dl>
+</div>
+<!-- Intro image -->
+<figure class="item_img img-intro img-intro__none">
+		<a href="blog/13-blog-in-neque-arcu-vulputate/10-in-neque-arcu-vulputate-vitae.html">
+			<img src="{%static 'img/blog-img2.jpg' %}" alt=""/>
+				</a>
+	</figure>
+<!-- Introtext -->
+<div class="item_introtext">
+	<h4><span class="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first">Wempore,</span> <span class="item_title_part_1 item_title_part_even item_title_part_first_half">cum</span> <span class="item_title_part_2 item_title_part_odd item_title_part_first_half">soluta</span> <span class="item_title_part_3 item_title_part_even item_title_part_first_half">nobiesteligendiptio</span> <span class="item_title_part_4 item_title_part_odd item_title_part_first_half">cumque</span> <span class="item_title_part_5 item_title_part_even item_title_part_first_half">nihil</span> <span class="item_title_part_6 item_title_part_odd item_title_part_second_half">impeditquo</span> <span class="item_title_part_7 item_title_part_even item_title_part_second_half">minus</span> <span class="item_title_part_8 item_title_part_odd item_title_part_second_half">id</span> <span class="item_title_part_9 item_title_part_even item_title_part_second_half">quod</span> <span class="item_title_part_10 item_title_part_odd item_title_part_second_half">maxime</span> <span class="item_title_part_11 item_title_part_even item_title_part_second_half item_title_part_last">placeat.</span></h4>
+<p>Vivamus tortor lorem, iaculis et scelerisque at, convallis et odio. Duis ex mi, blandit eu tortor id, rhoncus bibendum nisl. Mauris elementum, est id euismod tristique, nisi neque imperdiet nisi, ac tincidunt enim elit in nunc. Cras id volutpat eros. Quisque facilisis condimentum pretium. Nulla facilisi. Duis venenatis, orci in dignissim accumsan, dolor est rhoncus nunc, vitae venenatis accumsan. Mauris tempus porttitor eros, ac cursus odio efficitur in. Nulla gravida arcu orci, at ornare magna laoreet vitae. Nulla bibendum magna quis lacus dignissim semper. Risus eu turpis mollis accumsan. Maecenas lobortis augue tellus, in volutpat ligula venenatis nec.</p>
+</div>
+<!-- info BOTTOM -->
+	<!-- Tags -->
+		<!-- More -->
+<a class="btn btn-info" href="blog/13-blog-in-neque-arcu-vulputate/10-in-neque-arcu-vulputate-vitae.html">
+	<span>
+		Read more	</span>
+</a>
+<div class="kmt-readon">
+
+				<span class="kmt-comment aligned-left">
+			<a href="blog/13-blog-in-neque-arcu-vulputate/10-in-neque-arcu-vulputate-vitae.html#section-kmt">0 </a>
+		</span>
+
+			</div>			</article><!-- end item -->
+					</div><!-- end spann -->
+
+	</div><!-- end row -->
+	<footer class="pagination">
+		<ul>
+			<li class="pagination-start">
+				<span class="pagenav">Start</span>
+			</li>
+			<li class="pagination-prev">
+				<span class="pagenav">Prev</span>
+			</li>
+			<li>
+				<span class="pagenav">1</span>
+			</li>
+			<li><a href="blogbc9c.html?start=2" class="pagenav">2</a></li><li><a href="blog0c72.html?start=4" class="pagenav">3</a></li>
+			<li><a href="blog034f.html?start=6" class="pagenav">4</a></li>
+			<li class="pagination-next"><a title="Next" href="blogbc9c.html?start=2" class="hasTooltip pagenav">Next</a></li>
+			<li class="pagination-end"><a title="End" href="blog034f.html?start=6" class="hasTooltip pagenav">End</a></li>
+		</ul>
+	</footer>
+	</section>
+	</main>
+    </div>
+    </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="push"></div>
+      </div>
+    </div>
+        <div id="footer-wrapper">
+      <!--<div class="footer-wrapper-inner">
+        <!-- Copyright
+        <div id="copyright" role="contentinfo">
+          <div class="row-container">
+            <div class="container-fluid">
+              <div class="row-fluid">
+                <div class="copyright span8">
+                                    <span class="siteName">Dogs Club</span>
+    					      					      <span class="copy">&copy;</span>  					      <span class="year">2015</span>                                    <a class="privacy_link" rel="license" href="privacy-policy.html">Privacy policy</a>
+    					                                      </div>
+                <div class="moduletable   span4"><div class="module_container"><header><h5 class="moduleTitle title"><span class="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first">FACEBOOK</span> <span class="item_title_part_1 item_title_part_even item_title_part_first_half">LIKE</span> <span class="item_title_part_2 item_title_part_odd item_title_part_second_half item_title_part_last">BOX</span></h5></header><div id="tm_facebook_page_plugin_140" class="tm_facebook_page_plugin_">
+
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "../../../connect.facebook.net/en-GB/sdk.js#xfbml=1&version=v2.3&appId=930899133604868";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script><div class="fb-page" data-href="https://www.facebook.com/facebook" data-hide-cover="0" data-show-facepile="1" data-width="" data-height="" data-show-posts="0"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/facebook"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div></div></div>
+<script>
+	;(function ($) {
+        var o = $('.fb-page');
+
+        $(window).load(function () {
+            o.css({'display': 'block'})
+                .find('span').css({
+                    'width': '100%',
+                    'display': 'block',
+                    'text-align': 'inherit'
+                })
+                .find('iframe').css({
+                    'display': 'inline-block',
+                    'position': 'static'
+                });
+        });
+
+        $(window).on('load resize', function () {
+            if (o.parent().width() < o.find('iframe').width()) {
+                o.find('iframe').css({
+                    'transform': 'scale(' + (o.width() / o.find('iframe').width()) + ')',
+                    'transform-origin': '0% 0%'
+                })
+                    .parent().css({
+                        'height': (o.find('iframe').height() * (o.width() / o.find('iframe').width())) + 'px'
+                    });
+            } else {
+                o
+                    .find('span').css({
+                        'height': o.find('iframe').height()
+                    })
+                    .find('iframe').css({
+                        'transform': 'none'
+                    });
+            }
+        });
+    })(jQuery);
+</script></div></div>
+<!--<div class="moduletable social_menu  span2">
+	<div class="module_container">
+		<div class="mod-menu">
+	<ul class="nav menu social">
+	<li class="item-148"><a class="fa fa-tumblr-square" href="#" title="tumblr" >Tumblr</a>
+</li><li class="item-149"><a class="fa fa-facebook-square" href="#" title="facebook" >Facebook</a>
+</li><li class="item-150"><a class="fa fa-youtube" href="#" title="Youtube" >You Tube</a>
+</li>	</ul>
+</div></div></div><div class="moduletable  bordered  span3"><div class="module_container"><header><h5 class="moduleTitle fa fa-phone-square"><span class="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first item_title_part_last">TELEPHONES</span></h5></header><div class="mod-menu">
+	<ul class="nav menu ">
+	<li class="item-332"><span class="separator">+1 800 603 6035</span></li><li class="item-333"><span class="separator">+1 800 603 0587</span></li>	</ul>
+</div></div></div><div class="moduletable  bordered mail  span3"><div class="module_container"><header><h5 class="moduleTitle fa fa-envelope"><span class="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first">E-Mail</span> <span class="item_title_part_1 item_title_part_even item_title_part_second_half item_title_part_last">Us</span></h5></header><div class="mod-menu">
+	<ul class="nav menu ">
+	<li class="item-334"><a href="http://livedemo00.template-help.com/cdn-cgi/l/email-protection#f39e929a9fb397969e9c9f9a9d98dd9c8194" ><span class="__cf_email__" data-cfemail="0964686065496d6c64666560676227667b6e">[email&#160;protected]</span><script data-cfhash='f9e31' type="text/javascript">
+/* <![CDATA[ */!function(){try{var t="currentScript"in document?document.currentScript:function(){for(var t=document.getElementsByTagName("script"),e=t.length;e--;)if(t[e].getAttribute("data-cfhash"))return t[e]}();if(t&&t.previousSibling){var e,r,n,i,c=t.previousSibling,a=c.getAttribute("data-cfemail");if(a){for(e="",r=parseInt(a.substr(0,2),16),n=2;a.length-n;n+=2)i=parseInt(a.substr(n,2),16)^r,e+=String.fromCharCode(i);e=document.createTextNode(e),c.parentNode.replaceChild(e,c)}t.parentNode.removeChild(t);}}catch(u){}}()/* ]]> */</script></a>
+</li><li class="item-335"><a href="http://livedemo00.template-help.com/cdn-cgi/l/email-protection#660b070f0a2602030b090a0f080d48091401" ><span class="__cf_email__" data-cfemail="31525e5f455052457155545c5e5d585f5a1f5e4356">[email&#160;protected]</span><script data-cfhash='f9e31' type="text/javascript">
+/* <![CDATA[ */!function(){try{var t="currentScript"in document?document.currentScript:function(){for(var t=document.getElementsByTagName("script"),e=t.length;e--;)if(t[e].getAttribute("data-cfhash"))return t[e]}();if(t&&t.previousSibling){var e,r,n,i,c=t.previousSibling,a=c.getAttribute("data-cfemail");if(a){for(e="",r=parseInt(a.substr(0,2),16),n=2;a.length-n;n+=2)i=parseInt(a.substr(n,2),16)^r,e+=String.fromCharCode(i);e=document.createTextNode(e),c.parentNode.replaceChild(e,c)}t.parentNode.removeChild(t);}}catch(u){}}()/* ]]> */</script></a>
+</li>	</ul>
+</div></div></div>
+                                <!-- {%FOOTER_LINK}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!--      <div id="back-top">
+      <a href="#"><span></span> </a>
+    </div>
+            <div id="modal" class="modal hide fade loginPopup">
+      <div class="modal-hide"></div>
+      <div class="modal_wrapper">
+        <button type="button" class="close modalClose">Ã—</button>
+        <div class="moduletable "><div class="modal-header"><header><h3 class=""><span class="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first">Login</span> <span class="item_title_part_1 item_title_part_even item_title_part_second_half item_title_part_last">form</span></h3></header></div><div class="modal-body">
+
+<div class="lr_social_login_basic_150">
+		<div class="lr_providers">
+		<div class="lr_icons_box"><div>
+			<a class="lr_providericons lr_facebook" href="javascript:void(0);" onclick="javascript:window.open('http://www.facebook.com/dialog/oauth?client_id=296188807244109&amp;redirect_uri=http://livedemo00.template-help.com/joomla_55099/?provider=facebook&amp;display=popup&amp;scope=email,user_photos,user_about_me,user_hometown,user_photos','Facebook','toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=400px,height=400px');" rel="nofollow" title="Login with Facebook">Login with Facebook</a>
+			</div><div>
+			<a class="lr_providericons lr_google" href="javascript:void(0);" onclick="javascript:window.open('https://accounts.google.com/o/oauth2/auth?response_type=code&amp;redirect_uri=http://livedemo00.template-help.com/joomla_55099/?provider=google&amp;client_id=4ea43331a8b16c6ddb33685fc03635a8&amp;scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email','Google','toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=400px,height=400px');" rel="nofollow" title="Login with Google">Login with Google</a>
+			</div></div>
+		</div>
+		</div></div></div><div class="moduletable olark"><div class="modal-body">
+
+<!-- begin olark code
+<script data-cfasync="false" type='text/javascript'>/*<![CDATA[*/window.olark||(function(c){var f=window,d=document,l=f.location.protocol=="https:"?"https:":"http:",z=c.name,r="load";var nt=function(){
+f[z]=function(){
+(a.s=a.s||[]).push(arguments)};var a=f[z]._={
+},q=c.methods.length;while(q--){(function(n){f[z][n]=function(){
+f[z]("call",n,arguments)}})(c.methods[q])}a.l=c.loader;a.i=nt;a.p={
+0:+new Date};a.P=function(u){
+a.p[u]=new Date-a.p[0]};function s(){
+a.P(r);f[z](r)}f.addEventListener?f.addEventListener(r,s,false):f.attachEvent("on"+r,s);var ld=function(){function p(hd){
+hd="head";return["<",hd,"></",hd,"><",i,' onl' + 'oad="var d=',g,";d.getElementsByTagName('head')[0].",j,"(d.",h,"('script')).",k,"='",l,"//",a.l,"'",'"',"></",i,">"].join("")}var i="body",m=d[i];if(!m){
+return setTimeout(ld,100)}a.P(1);var j="appendChild",h="createElement",k="src",n=d[h]("div"),v=n[j](d[h](z)),b=d[h]("iframe"),g="document",e="domain",o;n.style.display="none";m.insertBefore(n,m.firstChild).id=z;b.frameBorder="0";b.id=z+"-loader";if(/MSIE[ ]+6/.test(navigator.userAgent)){
+b.src="javascript:false"}b.allowTransparency="true";v[j](b);try{
+b.contentWindow[g].open()}catch(w){
+c[e]=d[e];o="javascript:var d="+g+".open();d.domain='"+d.domain+"';";b[k]=o+"void(0);"}try{
+var t=b.contentWindow[g];t.write(p());t.close()}catch(x){
+b[k]=o+'d.write("'+p().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}a.P(2)};ld()};nt()})({
+loader: "static.olark.com/jsclient/loader0.js",name:"olark",methods:["configure","extend","declare","identify"]});
+/* custom configuration goes here (www.olark.com/documentation) */
+olark.identify('5615-604-10-1042');/*]]>*/</script>
+<!-- end olark code </div></div><div class="moduletable "><div class="modal-body"><div class="mod-login mod-login__">
+	<form action="http://livedemo00.template-help.com/joomla_55099/index.php/blog" method="post" id="login-form-16" class="form-inline">
+				<div class="mod-login_userdata">
+		<div id="form-login-username-16" class="control-group">
+			<div class="controls">
+								<input id="mod-login_username-16" class="inputbox mod-login_username" type="text" name="username" tabindex="1" size="18" placeholder="User name" required>
+							</div>
+		</div>
+		<div id="form-login-password-16" class="control-group">
+			<div class="controls">
+								<input id="mod-login_passwd-16" class="inputbox mod-login_passwd" type="password" name="password" tabindex="2" size="18" placeholder="Password"  required>
+							</div>
+		</div>
+								<label for="mod-login_remember-16" class="checkbox">
+				<input id="mod-login_remember-16" class="mod-login_remember" type="checkbox" name="remember" value="yes">
+				Remember me			</label>
+						<div class="mod-login_submit">
+				<button type="submit" tabindex="3" name="Submit" class="btn btn-primary">Log in</button>
+			</div>
+
+			<ul class="unstyled">
+				<li><a href="username-reminder-request.html" class="" title="Forgot your username?">Forgot your username?</a></li>
+				<li><a href="password-reset.html" class="" title="Forgot your password?">Forgot your password?</a></li>
+								<li><a href="user-registration.html">Create an account</a></li>
+							</ul>
+			<input type="hidden" name="option" value="com_users">
+			<input type="hidden" name="task" value="user.login">
+			<input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fY29udGVudCZ2aWV3PWNhdGVnb3J5JmxheW91dD10aGVtZTMxNDQ6Y2F0ZWdvcnkmaWQ9OA==">
+			<input type="hidden" name="2b87137163c64539488a05dbce315f32" value="1" />		</div>
+			</form>
+</div></div></div>
+      </div>
+    </div> -->
+
+        <script src="{%static 'js/jquery.stellar.min.js' %}"></script>
+    <script>
+      jQuery(function($) {
+        $(window).load(function(){
+          $.stellar({responsive: true,horizontalScrolling: false});
+        });
+      });
+    </script>
+        <script src="{%static 'js/jquery.simplr.smoothscroll.min.js' %}"></script>
+        <script src="{%static 'js/jquery.BlackAndWhite.min.js' %}"></script>
+    <script>
+      ;(function($, undefined) {
+      $.fn.BlackAndWhite_init = function () {
+        var selector = $(this);
+        selector.find('img').not(".slide-img").parent().BlackAndWhite({
+          invertHoverEffect: ".$this->params->get('invertHoverEffect').",
+          intensity: 1,
+          responsive: true,
+          speed: {
+              fadeIn: ".$this->params->get('fadeIn').",
+              fadeOut: ".$this->params->get('fadeOut')."
+          }
+        });
+      }
+      })(jQuery);
+      jQuery(window).load(function($){
+        jQuery('.item_img a').find('img').not('.lazy').parent().BlackAndWhite_init();
+      });
+    </script>
+        <script src="{%static 'js/jquery.fancybox.pack.js' %}"></script>
+    <script src="{%static 'js/jquery.fancybox-buttons.js' %}"></script>
+    <script src="{%static 'js/jquery.fancybox-media.js' %}"></script>
+    <script src="{%static 'js/jquery.fancybox-thumbs.js' %}"></script>
+    <script src="{%static 'js/jquery.pep.js' %}"></script>
+    <script src="{%static 'js/jquery.vide.min.js' %}"></script>
+    <script src="{%static 'js/autosize.min.js' %}"></script>
+    <script src="{%static 'js/scripts.js' %}"></script>
+    <script type="text/javascript">/* CloudFlare analytics upgrade */
+</script>
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"72d7dcce33","applicationID":"1388850","transactionName":"ZV1TZ0FTVkFVWkwKXlwXcFBHW1dcG3pXDUVXVkVwXFxMQFtVVAZDHVxYQENeWUs=","queueTime":0,"applicationTime":942,"atts":"SRpQEQlJRU8=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-686.min.js"}</script><script type="text/javascript">
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l=document.getElementsByTagName("a"),t=document.createElement("textarea");for(i=0;l.length-i;i++){try{a=l[i].getAttribute("href");if(a&&a.indexOf("/cdn-cgi/l/email-protection") > -1  && (a.length > 28)){s='';j=27+ 1 + a.indexOf("/cdn-cgi/l/email-protection");if (a.length > j) {r=parseInt(a.substr(j,2),16);for(j+=2;a.length>j&&a.substr(j,1)!='X';j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}j+=1;s+=a.substr(j,a.length-j);}t.innerHTML=s.replace(/</g,"&lt;").replace(/>/g,"&gt;");l[i].setAttribute("href","mailto:"+t.value);}}catch(e){}}}catch(e){}})();
+/* ]]> */
+</script>
+</body>
+
+<!-- Mirrored from livedemo00.template-help.com/joomla_55099/index.php/blog by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 21 Sep 2015 18:43:32 GMT -->
+</html>

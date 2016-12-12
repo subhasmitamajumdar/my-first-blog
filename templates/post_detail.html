@@ -1,0 +1,106 @@
+{%include "navbar.html"%}
+{%load urlify%}
+{%load crispy_forms_tags%}
+<title>{{instance.title}}</title>
+{%block content%}
+<div class="container">
+        <div class="blog-header">
+        <p class="lead blog-description"></p>
+<div class="col-sm-12">
+    <div class="dropdown">
+        <button class="pull-right btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+            <i class="fa fa-chevron-circle-down" aria-hidden="true"></i></button>
+                <ul class="pull-right dropdown-menu">
+                    <li><a href="{{instance.get_absolute_url1}}">Edit</a></li>
+                    <li><a href="{{instance.get_absolute_url2}}">Delete</a></li>
+                </ul>
+        <h3 class="blog-post-title">{{title}}<small>{%if instance.draft%}<span style="color:red;"> Draft </span>{%endif%}</small>
+        </h3>
+        </div>
+    {%if instance.image%}
+        <img src="{{instance.image.url}}" class="img-responsive"/>
+    {%endif%}
+    <p></p>
+     <p class="blog-post-meta">{{instance.publish}} by {{instance.user.get_username}}</p>
+        <p class="content-markdown">{{instance.content}}</p>
+        <p>
+            <div class="fb-like" data-href="{{request.build_absolute_uri}}" data-layout="button_count"
+            data-action="like" data-size="small" data-show-faces="true" data-share="true">
+            </div><hr/>
+        </p>
+
+</div>
+
+<!--    <a href="https://www.facebook.com/sharer/sharer.php?u={{request.build_absolute_uri}}">Facebook</a>
+    <a href="https://twitter.com/home?status={{instance.content|truncatechars:40|urlify}}%20{{request.build_absolute_uri}}">Twitter</a>
+    <a href='https://plus.google.com/share?url={{request.build_absolute_uri}}'></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{request.build_absolute_uri}}&title={{instance.title}}
+             &summary={{share_string}}&source={{request.build_absolute_uri}}">Linkedin</a>
+    <div class="row">
+    <div class="col-sm-12">
+    <div class=" content-markdown">{{instance.content}}</div>
+
+    <div class="post-detail-item">{{instance.get_markdown}}</div>-->
+    <div class="col-lg-6">
+        <p class="lead">Comments</p>
+        {%if request.user.is_authenticated%}
+            <form method="post" action=".">{% csrf_token %}
+                {{comment_form|crispy}}
+                <input type="submit" value="Comment" class="btn btn-default">
+            </form>
+        {%else%}
+            <p>You must login to comment</p>
+        {%endif%}
+        <hr/>
+        {% for comment in comments %}
+        <blockquote>
+            <p>{{comment.content}}</p>
+            <footer>via {{comment.user}} | {{comment.timestamp|timesince}} ago |
+                {% if comment.children.count > 0 %}
+                    {{comment.children.count}}
+                        Comment{% if comment.children.count > 1 %}s{%endif%} |
+                {%endif%}
+                <a class="comment-reply-btn" href="#">Reply</a> | <a class="" href="{{comment.get_absolute_url}}">Thread</a></footer>
+            <div class="comment-reply">
+                {% for child_comment in comment.children %}
+                    <blockquote>
+                        <p>{{child_comment.content}}</p>
+                        <footer>via {{child_comment.user}} | {{child_comment.timestamp|timesince}} ago</footer>
+                    </blockquote>
+                {% endfor %}
+                {%if request.user.is_authenticated%}
+                    <form method="post" action=".">{% csrf_token %}
+                        {{comment_form|crispy}}
+                        <input type="hidden" name="parent_id" value="{{comment.id}}">
+                        <input type="submit" value="Reply" class="btn btn-default">
+                    </form>
+                {%else%}
+                    <p>You must login to comment</p>
+                {%endif%}
+            </div>
+            <hr/>
+        </blockquote>
+        {%endfor%}
+    </div>
+
+<!--</div>
+<div class="fb-comments" data-href="{{request.build_absolute_uri}}" data-numposts="5"></div>
+</div>-->
+    </div>
+</div>
+{%endblock content%}
+<footer class="blog-footer">
+   <div class="pagination">
+      <span class="step-links">
+          <nav>
+              <ul class="pager">Share on:
+                  <li><a class="fa fa-facebook-official" aria-hidden="true" href="https://www.facebook.com/sharer/sharer.php?u={{request.build_absolute_uri}}">  Facebook</a></li>
+                  <li><a class="fa fa-twitter" aria-hidden="true" href="https://twitter.com/home?status={{instance.content|truncatechars:40|urlify}}%20{{request.build_absolute_uri}}">  Twitter</a></li>
+              </ul>
+          </nav>
+     </span>
+   </div>
+    <p>
+        <a href="#">Back to top</a>
+      </p>
+    </footer>
